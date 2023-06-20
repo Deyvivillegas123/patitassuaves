@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style-dar-adopcion.css">
+    <title>Dar en Adopción</title>
+</head>
+
+<body>
+    <!-- ===================Navbar========================= -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="/img/logo_macota.jpeg" alt="">
+            </a>
+        </div>
+        <input type="checkbox" id="nav_check" hidden>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="/img/logo_macota.jpeg" alt="">
+                </a>
+            </div>
+            <ul>
+                <li>
+                    <a href="quienes-somos.html">¿Quiénes Somos?</a>
+                </li>
+                <li>
+                    <a href="#">Mascotas</a>
+                </li>
+                <li>
+                    <a href="adoptar.html">Adoptar</a>
+                </li>
+                <li>
+                    <a href="dar-adopcion.html"">Dar en Adopción</a>
+                </li>
+                <li>
+                    <a href=" #">Refugios</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+                <li>
+                    <a href="login.php" class="active">Iniciar Sesión</a>
+                </li>
+            </ul>
+        </nav>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </header>
+
+    <!-- ========================== Contacto ============================ -->
+    <section class="formulario">
+        <div class="container">
+            <div class="form-image">
+                <h1>Salvemos vidas</h1>
+            </div>
+            <div class="form">
+                <form action="#">
+                    <div class="form-header">
+                        <div class="title">
+                            <h1>Formulario para dar en adopcion</h1>
+                        </div>
+                    </div>
+    
+                    <div class="input-group">
+                        <div class="input-box">
+                            <label for="firstname">Nombre de la mascota</label>
+                            <input type="text" placeholder="Nombre de la mascota" />
+                        </div>
+    
+                        <div class="input-box">
+                            <label for="lastname">Numero de contacto</label>
+                            <input
+                            type="tel"
+                            pattern="[0-9]{9}"
+                            placeholder="Escribir numero telefonico"
+                            required
+                            />
+                        </div>
+                    
+                        <div class="input-box">
+                            <label for="email">E-mail</label>
+                            <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                        </div>
+    
+                        <div class="input-box">
+                            <label for="number">Celular</label>
+                            <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                        </div>
+    
+                        <div class="input-box">
+                            <label for="password">Senha</label>
+                            <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                        </div>
+    
+    
+                        <div class="input-box">
+                            <label for="confirmPassword">Confirme sua Senha</label>
+                            <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Digite sua senha novamente" required>
+                        </div>
+    
+                    </div>
+    
+                    <div class="gender-inputs">
+                        <div class="gender-title">
+                            <h6>Gênero</h6>
+                        </div>
+    
+                        <div class="gender-group">
+                            <div class="gender-input">
+                                <input id="female" type="radio" name="gender">
+                                <label for="female">Feminino</label>
+                            </div>
+    
+                            <div class="gender-input">
+                                <input id="male" type="radio" name="gender">
+                                <label for="male">Masculino</label>
+                            </div>
+    
+                            <div class="gender-input">
+                                <input id="others" type="radio" name="gender">
+                                <label for="others">Outros</label>
+                            </div>
+    
+                            <div class="gender-input">
+                                <input id="none" type="radio" name="gender">
+                                <label for="none">Prefiro não dizer</label>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="continue-button">
+                        <button><a href="#">Continuar</a> </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+    <!-- ========================== Footer ============================ -->
+    <footer class="footer">
+        <div class="contacto">
+            <div class="contacto-row">
+                <div class="footer-links">
+                    <h4>Nosotros</h4>
+                    <ul>
+                        <li><a href="#">Acerca de Patitas Suaves</a></li>
+                        <li><a href="#">Contacta con nosotros</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+
+                    <h4>Información</h4>
+                    <ul>
+                        <li><a href="#">Horarios de Atención</a></li>
+                        <li><a href="#">Guías de Cuidados</a></li>
+                        <li><a href="#">Reportar Problema</a></li>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="quienes-somos.html">¿Quiénes Somos?</a></li>
+                        <li><a href="#">Mascotas</a></li>
+                        <li><a href="adoptar.html">Adoptar</a></li>
+                        <li><a href="dar-adopcion.html">Dar Adopción</a></li>
+                        <li><a href="#">Refugios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

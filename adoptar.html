@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario de registro con múltiples pasos</title>
+    <link rel="stylesheet" href="style-adoptar.css">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- ===================Navbar========================= -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="/img/logo_macota.jpeg" alt="">
+            </a>
+        </div>
+        <input type="checkbox" id="nav_check" hidden>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="/img/logo_macota.jpeg" alt="">
+                </a>
+            </div>
+            <ul>
+                <li>
+                    <a href="quienes-somos.html">¿Quiénes Somos?</a>
+                </li>
+                <li>
+                    <a href="#">Mascotas</a>
+                </li>
+                <li>
+                    <a href="adoptar.html">Adoptar</a>
+                </li>
+                <li>
+                    <a href="dar-adopcion.html"">Dar en Adopción</a>
+                </li>
+                <li>
+                    <a href="#">Refugios</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+                <li>
+                    <a href="login.php" class="active">Iniciar Sesión</a>
+                </li>
+            </ul>
+        </nav>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </header>
+
+    <!-- ===================Formulario========================= -->
+
+    <div class="root">
+        <form action="" class="form-register">
+            <div class="form-register__header">
+                <ul class="progressbar">
+                    <li class="progressbar__option active">paso 1</li>
+                    <li class="progressbar__option">paso 2</li>
+                </ul>
+                <h1 class="form-register__title">Formulario de Adopción</h1>
+            </div>
+            <div class="form-register__body">
+                <div class="step active" id="step-1">
+                    <div class="step__header">
+                        <h2 class="step__title">Información Personal <small>(Paso 1)</small></h2>
+                    </div>
+                    <div class="step__body">
+                        <input type="text" placeholder="Nombres Completos" class="step__input">
+                        <input type="text" placeholder="Apellidos" class="step__input">
+                        <input type="tel" placeholder="DNI" class="step__input">
+                        <input type="tel" placeholder="Teléfono" class="step__input">
+                        <input type="text" placeholder="Trabajo u ocupación" class="step__input">
+                        <input type="text" placeholder="Lugar de Residencia" class="step__input">
+                        <textarea rows="4" cols="80" placeholder="Dirección" class="step__input"></textarea>
+                    </div>
+                    <div class="step__footer">
+                        <button type="button" class="step__button step__button--next" data-to_step="2" data-step="1">Siguiente</button>
+                    </div>
+                </div>
+                <div class="step" id="step-2">
+                    <div class="step__header">
+                        <h2 class="step__title">Información Adicional <small>(Paso 2)</small></h2>
+                    </div>
+                    <div class="step__body">
+                        <input type="number" placeholder="Integrantes de su familia incluyendose" class="step__input">
+                        <input type="number" placeholder="Cantidad de niños" class="step__input">
+                        <input type="text" placeholder="¿Están todos de acuerdo en adoptar? (SI/NO)" class="step__input">
+                        <input type="text" placeholder="¿En el pasado ha tenido mascotas? (SI/NO)" class="step__input">
+                        <input type="text" placeholder="¿Actualmente posee mascotas? (SI/NO)" class="step__input">
+                        <textarea rows="4" cols="80" placeholder="Motivo por el cual desea adoptar" class="step__input"></textarea>
+                    </div>
+                    <div class="step__footer">
+                        <button type="button" class="step__button step__button--back" data-to_step="1" data-step="2">Regresar</button>
+                        <button type="submit" class="step__button">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="app.js"></script>
+    
+    <!-- ========================== Footer ============================ -->
+    <footer class="footer">
+        <div class="contacto">
+            <div class="contacto-row">
+                <div class="footer-links">
+                    <h4>Nosotros</h4>
+                    <ul>
+                        <li><a href="#">Acerca de Patitas Suaves</a></li>
+                        <li><a href="#">Contacta con nosotros</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    
+                    <h4>Información</h4>
+                    <ul>
+                        <li><a href="#">Horarios de Atención</a></li>
+                        <li><a href="#">Guías de Cuidados</a></li>
+                        <li><a href="#">Reportar Problema</a></li>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="quienes-somos.html">¿Quiénes Somos?</a></li>
+                        <li><a href="#">Mascotas</a></li>
+                        <li><a href="adoptar.html">Adoptar</a></li>
+                        <li><a href="dar-adopcion.html">Dar Adopción</a></li>
+                        <li><a href="#">Refugios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
